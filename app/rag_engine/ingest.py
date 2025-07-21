@@ -1,7 +1,7 @@
 from langchain_community.document_loaders import TextLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_huggingface import HuggingFaceEmbeddings
-from langchain_community.vectorstores import Chroma
+from langchain_chroma import Chroma
 import os
 
 def load_documents(data_dir="data"):
@@ -18,8 +18,7 @@ def build_vectorstore(docs, persist_dir="vectorstore"):
 
     embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
     vectordb = Chroma.from_documents(texts, embedding=embeddings, persist_directory=persist_dir)
-    vectordb.persist()
-    return vectordb
+    return vectordb  # Chroma now auto-persists from v0.4+
 
 if __name__ == "__main__":
     raw_docs = load_documents("data")
