@@ -1,26 +1,25 @@
 import os
 import requests
 
-def search_web(query):
-    api_key = os.getenv("TAVILY_API_KEY")
-    if not api_key:
-        print("[ERROR] Tavily API key not found in .env")
-        return None
+TAVILY_API_KEY = os.getenv("TAVILY_API_KEY")
 
+def search_web(query, return_source=False):
     url = "https://api.tavily.com/search"
-    headers = {"Authorization": f"Bearer {api_key}"}
     payload = {
+        "api_key": TAVILY_API_KEY,
         "query": query,
-        "search_depth": "basic",
-        "include_answer": True,
-        "max_results": 3,
+        "search_depth": "advanced",
+        "max_results": 3
     }
-
     try:
-        response = requests.post(url, json=payload, headers=headers)
-        response.raise_for_status()
-        data = response.json()
-        return data.get("answer", "")
+        res = requests.post(url, json=payload)
+        res.raise_for_status()
+        data = res.json()
+        if not data["results"]:
+            return ("", "") if return_source else ""
+        combined_content = "\n\n".join([r["content"] for r in data["results"]])
+        first_url = data["results"][0]["url"]
+        return (combined_content, first_url) if return_source else combined_content
     except Exception as e:
-        print(f"[ERROR] Tavily API failed: {e}")
-        return None
+        print("❌ Tavily API error:", e)
+        return ("", "") if return_source else ""
