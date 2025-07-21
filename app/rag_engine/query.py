@@ -1,11 +1,14 @@
 import os
+import time
 from dotenv import load_dotenv
 from langchain_chroma import Chroma
 from langchain_ollama import OllamaLLM
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_core.prompts import PromptTemplate
 from langchain_core.runnables import RunnablePassthrough
+
 from app.websearch.tavily_tool import search_web
+from app.utils.logger import log_eval
 
 load_dotenv()
 
@@ -32,14 +35,15 @@ Answer:"""
     return {"context": retriever, "question": RunnablePassthrough()} | prompt | llm
 
 def query_rag_system(question: str):
+    start_time = time.time()
     vectordb = load_vectorstore()
     llm = get_llm()
     chain = get_rag_chain(vectordb, llm)
 
-    # Step 1: Retrieve chunks
+    # Step 1: Try retrieving local context
     chunks = chain.steps[0].invoke(question)
 
-    # 🟡 Fallback if no strong context
+    # 🟡 Web fallback if chunks are empty or weak
     if not chunks or all(len(chunk.strip()) < 50 for chunk in chunks):
         print("\n[🟡] No relevant context found locally. Using web search...")
         web_response = search_web(question, include_meta=True)
@@ -50,13 +54,19 @@ def query_rag_system(question: str):
         answer = web_response["answer"]
         urls = [r.get("url") for r in web_response.get("results", []) if "url" in r]
         citation = f"\n\n🔗 According to: {urls[0]}" if urls else ""
-        return answer + citation
+        full_answer = answer + citation
 
-    # 🟢 If local docs found, cite source files
+        log_eval(question, full_answer, "web", True, time.time() - start_time)
+        return full_answer
+
+    # 🟢 If local context found, answer with source citations
     filenames = list({doc.metadata.get("source", "local.txt") for doc in chunks})
     answer = chain.invoke(question)
     citation = f"\n\n📄 From: {', '.join(f'[{f}]' for f in filenames)}"
-    return answer + citation
+    full_answer = answer + citation
+
+    log_eval(question, full_answer, "rag", False, time.time() - start_time)
+    return full_answer
 
 if __name__ == "__main__":
     print("🤖 Ask your question (Ctrl+C to exit):")
