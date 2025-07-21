@@ -1,0 +1,18 @@
+[
+  {
+    "timestamp": "2025-07-21T13:31:19.227136",
+    "question": "who si the current president of INdia",
+    "answer": "Droupadi Murmu is the current president of India, having taken office on 25 July 2022. She is the 15th president.\n\n\ud83d\udd17 According to: https://en.wikipedia.org/wiki/President_of_India",
+    "source": "web",
+    "response_time_secs": 1,
+    "citations": 18.158719539642334
+  },
+  {
+    "timestamp": "2025-07-21T13:32:17.590485",
+    "question": "Who is Varun Dronamraju can you get me his linkedin, can you tell me who is the CEO of Nvidia and what is quantum computing?",
+    "answer": "Varun Dronamraju is a student at GITAM University. The CEO of Nvidia is Jensen Huang. Quantum computing uses quantum bits to process information.\n\n\ud83d\udd17 According to: https://in.linkedin.com/in/varundronamraju",
+    "source": "web",
+    "response_time_secs": 1,
+    "citations": 18.83054280281067
+  }
+]

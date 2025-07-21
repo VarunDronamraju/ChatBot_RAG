@@ -15,11 +15,10 @@ def load_documents(data_dir="data"):
 def build_vectorstore(docs, persist_dir="vectorstore"):
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
     texts = text_splitter.split_documents(docs)
-
     embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
     vectordb = Chroma.from_documents(texts, embedding=embeddings, persist_directory=persist_dir)
+    
     return vectordb
-
 
 if __name__ == "__main__":
     raw_docs = load_documents("data")
