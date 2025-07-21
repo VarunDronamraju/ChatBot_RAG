@@ -1,1 +1,1 @@
-This is a sample document for RAG testing.
+This document contains a basic introduction to the Retrieval-Augmented Generation (RAG) architecture. It combines a retriever and a generative model.
