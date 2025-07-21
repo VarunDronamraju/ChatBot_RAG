@@ -1,0 +1,21 @@
+# Bytecode
+__pycache__/
+*.py[cod]
+*.pyd
+
+# Envs
+.venv/
+venv/
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# Output files
+vectorstore/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
