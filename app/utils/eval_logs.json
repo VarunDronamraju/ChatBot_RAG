@@ -14,5 +14,126 @@
     "source": "web",
     "response_time_secs": 1,
     "citations": 18.83054280281067
+  },
+  {
+    "timestamp": "2025-07-23T13:59:18.113171",
+    "question": "who is the president of INDIA",
+    "answer": "The president of India is Smt Droupadi Murmu. She has been in office since 2025. She is the ceremonial head of state.\n\n\ud83d\udd17 According to: http://www.presidentofindia.gov.in/",
+    "source": "web",
+    "response_time_secs": 1,
+    "citations": 17.245625019073486
+  },
+  {
+    "timestamp": "2025-07-23T14:00:00.797834",
+    "question": "what does the document detailed about",
+    "answer": "A detailed document is a thorough record of information. It can be digital or physical. Document review is crucial for legal proceedings to select relevant documents.\n\n\ud83d\udd17 According to: https://www.collinsdictionary.com/dictionary/english/detailed-document",
+    "source": "web",
+    "response_time_secs": 1,
+    "citations": 5.415287733078003
+  },
+  {
+    "timestamp": "2025-07-23T19:45:51.558245",
+    "question": "who is Elon Musk",
+    "answer": "Elon Musk is a businessman and inventor known for founding Tesla, SpaceX, and X. He is one of the world's wealthiest individuals. He has been influential in electric vehicles and space exploration.\n\n\ud83d\udd17 According to: https://www.investopedia.com/articles/personal-finance/061015/how-elon-musk-became-elon-musk.asp",
+    "source": "web",
+    "response_time": 17.26,
+    "citations": [
+      "https://www.investopedia.com/articles/personal-finance/061015/how-elon-musk-became-elon-musk.asp"
+    ]
+  },
+  {
+    "timestamp": "2025-07-23T19:54:01.185003",
+    "question": "who is Elon Musk",
+    "answer": "Elon Musk is the CEO of Tesla and SpaceX.\n\n\ud83d\udcc4 From: [ceo_list.txt], [openai_info.txt], [elon_musk.txt]",
+    "source": "local",
+    "response_time": 18.35,
+    "citations": [
+      "ceo_list.txt",
+      "openai_info.txt",
+      "elon_musk.txt"
+    ]
+  },
+  {
+    "timestamp": "2025-07-23T19:56:34.766874",
+    "question": "who is Elon Musk",
+    "answer": "Elon Musk is a South African-American entrepreneur, engineer, and businessman who co-founded SpaceX, Inc., the Tesla supercar company, and Tesla Inc.  [1]\n\nHe is one of the richest people in the world, with an estimated net worth of $272 billion [2].\n\nMusk was born in Pretoria, South Africa, and moved to Canada when he was 12 years old [3].\n\nHe pursued his engineering degree at the University of Pennsylvania and later moved on to work at several technology companies in Canada and the United States [4].\n\nIn 2002, Musk co-founded Zip2, a company that developed online city guidebooks for major US cities [5].\n\nIn 2006, he co-founded X.com, an online payments company that was later acquired by PayPal [6].\n\nMusk's ventures have been highly successful, and he has received numerous awards and accolades for his work, including the Presidential Medal of Freedom from President Barack Obama in 2017 [7].\n\n\ud83d\udcc4 From: [elon_musk.txt], [openai_info.txt], [ceo_list.txt]",
+    "source": "local",
+    "response_time": 20.03,
+    "citations": [
+      "elon_musk.txt",
+      "openai_info.txt",
+      "ceo_list.txt"
+    ]
+  },
+  {
+    "timestamp": "2025-07-23T19:56:50.310900",
+    "question": "what is OpenAI",
+    "answer": "Sure, here's the answer to your question:\n\nOpenAI is an AI research company founded in 2015. It is the creator of ChatGPT and other language models, such as LaMDA and BERT.\n\n\ud83d\udcc4 From: [elon_musk.txt], [ceo_list.txt]",
+    "source": "local",
+    "response_time": 4.79,
+    "citations": [
+      "elon_musk.txt",
+      "ceo_list.txt"
+    ]
+  },
+  {
+    "timestamp": "2025-07-23T19:58:45.354349",
+    "question": "who is Elon Musk",
+    "answer": "Elon Musk is the CEO of Tesla and SpaceX. He founded Neuralink and The Boring Company.\n\n\ud83d\udcc4 From: [elon_musk.txt]",
+    "source": "local",
+    "response_time": 14.68,
+    "citations": [
+      "elon_musk.txt"
+    ]
+  },
+  {
+    "timestamp": "2025-07-23T20:03:38.478417",
+    "question": "who is Elon Musk",
+    "answer": "Elon Musk is the CEO of Tesla and SpaceX. He founded Neuralink and The Boring Company.\n\n\ud83d\udcc4 From: [elon_musk.txt]",
+    "source": "local",
+    "response_time": 14.7,
+    "citations": [
+      "elon_musk.txt"
+    ]
+  },
+  {
+    "timestamp": "2025-07-23T20:23:47.599167",
+    "question": "who is Elon Musk",
+    "answer": "Elon Musk is the CEO of Tesla and SpaceX. He founded Neuralink and The Boring Company. [source: elon_musk.txt]\n\n\ud83d\udcc4 From: [elon_musk.txt]",
+    "source": "local",
+    "response_time": 18.23,
+    "citations": [
+      "elon_musk.txt"
+    ]
+  },
+  {
+    "timestamp": "2025-07-23T20:26:39.505885",
+    "question": "who is Elon Musk",
+    "answer": "Elon Musk is the CEO of Tesla and SpaceX. He founded Neuralink and The Boring Company. [source: elon_musk.txt]\n\n\ud83d\udcc4 From: [elon_musk.txt]",
+    "source": "local",
+    "response_time": 15.34,
+    "citations": [
+      "elon_musk.txt"
+    ]
+  },
+  {
+    "timestamp": "2025-07-23T20:26:53.483708",
+    "question": "Who is Varun Dronamraju",
+    "answer": "Varun Dronamraju is a computer science graduate specializing in AI and machine learning. He is currently a STEM research intern at The University of Texas at Dallas. He is also involved in projects at QClairvoyance Quantum Labs.\n\n\ud83d\udd17 According to: https://in.linkedin.com/in/varundronamraju",
+    "source": "web",
+    "response_time": 6.03,
+    "citations": [
+      "https://in.linkedin.com/in/varundronamraju"
+    ]
+  },
+  {
+    "timestamp": "2025-07-23T20:27:16.829915",
+    "question": "Can you tell me the current population of india",
+    "answer": "As of 2025, India's population is 1,464,549,028. The figure is based on the latest United Nations data. This number reflects a steady increase from previous years.\n\n\ud83d\udd17 According to: https://www.worldometers.info/world-population/india-population/",
+    "source": "web",
+    "response_time": 6.06,
+    "citations": [
+      "https://www.worldometers.info/world-population/india-population/"
+    ]
   }
 ]
