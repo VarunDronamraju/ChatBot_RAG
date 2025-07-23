@@ -1,1 +1,11 @@
-gradio==4.44.0
+streamlit
+langchain
+langchain-community
+langchain-huggingface==0.0.3
+langchain-chroma
+langchain-ollama
+python-dotenv
+pypdf
+python-docx
+torch==2.3.0
+sentence-transformers==2.7.0

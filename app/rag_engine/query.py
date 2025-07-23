@@ -18,8 +18,24 @@ def load_vectorstore(persist_dir="vectorstore"):
 def get_llm():
     return OllamaLLM(model="gemma3:1b-it-qat")
 
+def expand_query(query):
+    query = query.lower()
+    expansions = {
+        "ai-driven de novo drug discovery": [
+            "artificial intelligence drug design",
+            "machine learning drug discovery",
+            "de novo molecule design",
+            "ai drug development"
+        ]
+    }
+    expanded_queries = [query]
+    for key, synonyms in expansions.items():
+        if key in query:
+            expanded_queries.extend(synonyms)
+    return expanded_queries
+
 def get_rag_chain(vectordb, llm):
-    retriever = vectordb.as_retriever(search_type="similarity_score_threshold", search_kwargs={"k": 4, "score_threshold": 0.5})  # Lowered threshold
+    retriever = vectordb.as_retriever(search_type="similarity_score_threshold", search_kwargs={"k": 4, "score_threshold": 0.1})  # Lowered threshold
     prompt = PromptTemplate.from_template(
         """Answer using ONLY provided context. If insufficient, say "I don't have enough information." Cite sources in [source] format.
 Question: {question}
@@ -38,50 +54,56 @@ def query_rag_system(question: str):
     llm = get_llm()
     chain = get_rag_chain(vectordb, llm)
 
-    chunks = vectordb.similarity_search_with_relevance_scores(question, k=4)
-    print(f"[DEBUG] Retrieved chunks: {[(doc.page_content, score) for doc, score in chunks]}")
-    relevant_chunks = [doc for doc, score in chunks if score > 0.5]  # Adjusted threshold
-    question_phrase = question.lower().strip("who is ")
-    filenames = []
+    queries = expand_query(question)
+    all_chunks = []
+    try:
+        for q in queries:
+            chunks = vectordb.similarity_search_with_relevance_scores(q, k=4)
+            all_chunks.extend(chunks)
+        unique_chunks = list({(doc.page_content, doc.metadata.get('source', 'unknown'), score) for doc, score in all_chunks})
+        relevant_chunks = [doc for doc, _, score in unique_chunks if max(0, min(1, score)) > 0.1]
+        chunk_info = [(doc.page_content, max(0, min(1, score)), doc.metadata.get('source', 'unknown')) for doc, _, score in unique_chunks]
+        print(f"[DEBUG] Retrieved chunks: {chunk_info}")
+    except Exception as e:
+        print(f"[ERROR] Vectorstore query error: {e}")
+        relevant_chunks = []
+        chunk_info = []
 
     if relevant_chunks:
-        filenames = list({doc.metadata.get("source", "local.txt") for doc in relevant_chunks if question_phrase in doc.page_content.lower()})
-
-    if not relevant_chunks or not filenames:
+        context = "\n".join([f"{doc.page_content} [source: {doc.metadata.get('source', 'unknown')}]" for doc in relevant_chunks])
+        print(f"[DEBUG] Context passed to LLM:\n{context}")
+        answer = chain.invoke(question)
+        filenames = list({doc.metadata.get("source", "local.txt") for doc in relevant_chunks})
+        citation = f"\n\n📄 From: {', '.join(f'[{f}]' for f in filenames)}"
+        full_answer = answer + citation
+        citations = filenames
+    else:
         print("[🟡] No relevant local context. Using web search...")
-        web_response = search_web(question, include_meta=True)
-        print(f"[DEBUG] search_web called: {question}")
-
-        if not web_response or not web_response.get("answer"):
-            print("[🟡] Web search failed.")
-            llm_prompt = PromptTemplate.from_template(
-                """Answer to the best of your knowledge. If unknown, say "I don't have enough information."
+        try:
+            web_response = search_web(question, include_meta=True)
+            print(f"[DEBUG] search_web called: {question}")
+            if not web_response or not web_response.get("answer"):
+                print("[🟡] Web search failed.")
+                llm_prompt = PromptTemplate.from_template(
+                    """Answer to the best of your knowledge. If unknown, say "I don't have enough information."
 Question: {question}
 Answer:"""
-            )
-            answer = llm.invoke(llm_prompt.format(question=question))
+                )
+                answer = llm.invoke(llm_prompt.format(question=question))
+                source = "llm"
+                full_answer = answer
+            else:
+                answer = web_response["answer"]
+                urls = [r.get("url") for r in web_response.get("results", []) if "url" in r]
+                citation = f"\n\n🔗 According to: {urls[0]}" if urls else ""
+                full_answer = answer + citation
+                source = "web"
+                citations = urls[:1]
+        except Exception as e:
+            print(f"[ERROR] Web search error: {e}")
+            full_answer = "I don't have enough information."
             source = "llm"
-            full_answer = answer
-            log_eval(question, full_answer, source, time.time() - start_time, citations)
-            return full_answer
 
-        answer = web_response["answer"]
-        urls = [r.get("url") for r in web_response.get("results", []) if "url" in r]
-        citation = f"\n\n🔗 According to: {urls[0]}" if urls else ""
-        full_answer = answer + citation
-        source = "web"
-        citations = urls[:1]
-        log_eval(question, full_answer, source, time.time() - start_time, citations)
-        return full_answer
-
-    context = "\n".join([f"{doc.page_content} [source: {doc.metadata.get('source', 'unknown')}]" for doc in relevant_chunks])
-    print(f"[DEBUG] Context passed to LLM:\n{context}")
-    print("[DEBUG] search_web not called (local context found).")
-
-    answer = chain.invoke(question)
-    citation = f"\n\n📄 From: {', '.join(f'[{f}]' for f in filenames)}"
-    citations = filenames
-    full_answer = answer + citation
     log_eval(question, full_answer, source, time.time() - start_time, citations)
     return full_answer
 
