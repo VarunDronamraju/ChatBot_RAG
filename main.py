@@ -1,3 +1,4 @@
+#main.py
 import os
 import streamlit as st
 import json
@@ -8,6 +9,9 @@ from langchain_core.runnables import RunnablePassthrough
 from app.utils.logger import LOG_FILE
 import time
 import re
+
+from dotenv import load_dotenv
+load_dotenv()
 
 # Set page configuration
 st.set_page_config(page_title="RAGBot Chatbot", page_icon="🤖", layout="wide")

@@ -1,0 +1,31 @@
+Add Streamlit Interface
+
+Enhance source citation for web fallback
+
+Improve decision routing (Agent/Router logic)
+
+Add response logging / evaluation logs
+
+Add response caching (optional)
+
+Optional: Metadata tracking per document
+
+
+🟡 P4	Eval Logs & Caching	❌ Not done	Save Q/A, source type, response time etc. into JSON or CSV logs
+🟡 P5	Streamlit UI	❌ Skipped	Final polish for presentation; simple sidebar + input/output
+🟡 P6	Metadata per Document	❌ Skipped	Add metadata (title, tags, etc.) when loading + use during retrieval
+
+
+
+Who is Varun Dronamraju can you get me his linkedin, can you tell me who is the CEO of Nvidia and what is quantum computing?
+
+
+
+
+🌟 LangChain Agent Router	HIGH	⚠️ In progress	Replace basic if-else fallback logic with a LangChain Agent to choose between RAG, Web, or LLM
+📊 Streamlit UI	HIGH	❌ Not started	User-friendly interface with sidebar, input box, citations view
+🧠 Response Caching	MED	❌ Not started	Avoid duplicate queries, save last answers (in memory or SQLite)
+📈 Logs UI / Viewer	LOW	❌ Optional	Display log metrics in UI (count of RAG vs Web usage etc.)
+🗂 Metadata Tracking	LOW	❌ Optional	Track metadata per document (e.g., upload date, tags, source author)
+🧪 Test Suite / Eval Notebook	MED	❌ Not started	Auto-evaluate responses across benchmark questions
+📘 README + Docs	MED	⚠️ Partial	Basic README done, but should be expanded with diagrams, usage examples, logs

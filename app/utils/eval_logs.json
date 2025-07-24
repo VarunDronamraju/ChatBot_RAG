@@ -286,5 +286,270 @@
     "citations": [
       "Veda for Denovo.docx"
     ]
+  },
+  {
+    "timestamp": "2025-07-24T11:10:58.046835",
+    "question": "what is retro synethesis",
+    "answer": "Retrosynthesis is a method for planning organic synthesis by deconstructing a target molecule into simpler precursors. It involves working backward to determine the best starting materials. This technique helps in designing efficient synthetic routes.\n\n\ud83d\udd17 According to: https://en.wikipedia.org/wiki/Retrosynthetic_analysis",
+    "source": "web",
+    "response_time": 14.77,
+    "citations": [
+      "https://en.wikipedia.org/wiki/Retrosynthetic_analysis"
+    ]
+  },
+  {
+    "timestamp": "2025-07-24T11:17:37.429508",
+    "question": "tell me about retro synthesis",
+    "answer": "Retrosynthesis is a method for planning organic syntheses by breaking down complex molecules into simpler precursors. It involves working backwards from the target molecule to identify feasible synthetic routes. This technique helps chemists design efficient synthesis strategies.\n\n\ud83d\udd17 According to: https://en.wikipedia.org/wiki/Retrosynthetic_analysis",
+    "source": "web",
+    "response_time": 15.55,
+    "citations": [
+      "https://en.wikipedia.org/wiki/Retrosynthetic_analysis"
+    ]
+  },
+  {
+    "timestamp": "2025-07-24T11:23:04.960837",
+    "question": "What Is AI-Driven De Novo Drug Discovery?",
+    "answer": "Cheminformatics tools are crucial for AI-driven de novo drug discovery. They involve the analysis and manipulation of chemical structures \u2013 molecular representations of molecules \u2013 to identify potential drug candidates. [source: Veda for Denovo.docx]\n\n\ud83d\udcc4 From: [Veda for Denovo.docx]",
+    "source": "local",
+    "response_time": 17.61,
+    "citations": [
+      "Veda for Denovo.docx"
+    ]
+  },
+  {
+    "timestamp": "2025-07-24T11:23:28.218854",
+    "question": "what is retro synethesis ",
+    "answer": "Retrosynthesis is a method for planning organic synthesis by breaking down a target molecule into simpler starting materials. It works backward from the desired product to identify feasible synthetic routes. This technique helps chemists design efficient pathways for creating complex molecules.\n\n\ud83d\udd17 According to: https://en.wikipedia.org/wiki/Retrosynthetic_analysis",
+    "source": "web",
+    "response_time": 5.79,
+    "citations": [
+      "https://en.wikipedia.org/wiki/Retrosynthetic_analysis"
+    ]
+  },
+  {
+    "timestamp": "2025-07-24T11:23:53.324017",
+    "question": "OpenAI is an",
+    "answer": "OpenAI is an AI research company founded in 2015. It is the creator of ChatGPT and other foundational models. [source: openai_info.txt]\n\n\ud83d\udcc4 From: [CoverLetter_VarunDronamraju_MLE.pdf], [openai_info.txt]",
+    "source": "local",
+    "response_time": 5.42,
+    "citations": [
+      "CoverLetter_VarunDronamraju_MLE.pdf",
+      "openai_info.txt"
+    ]
+  },
+  {
+    "timestamp": "2025-07-24T11:24:10.622673",
+    "question": "company founded in 2015",
+    "answer": "Amazon Air, Amazon Books, and Amblin Partners were founded in 2015. Other notable companies include Agility Robotics and AfterShock Comics.\n\n\ud83d\udd17 According to: https://en.wikipedia.org/wiki/Category:American_companies_established_in_2015",
+    "source": "web",
+    "response_time": 5.03,
+    "citations": [
+      "https://en.wikipedia.org/wiki/Category:American_companies_established_in_2015"
+    ]
+  },
+  {
+    "timestamp": "2025-07-24T11:24:24.595765",
+    "question": "It is the creator of ChatGPT and other foundational models.",
+    "answer": "OpenAI is an AI research company founded in 2015. It is the creator of ChatGPT and other foundational models. [source: openai_info.txt]\n\n\ud83d\udcc4 From: [openai_info.txt]",
+    "source": "local",
+    "response_time": 4.34,
+    "citations": [
+      "openai_info.txt"
+    ]
+  },
+  {
+    "timestamp": "2025-07-24T11:24:37.119021",
+    "question": "He founded Neuralink and",
+    "answer": "He founded Neuralink. [source: elon_musk.txt]\n\n\ud83d\udcc4 From: [elon_musk.txt]",
+    "source": "local",
+    "response_time": 4.09,
+    "citations": [
+      "elon_musk.txt"
+    ]
+  },
+  {
+    "timestamp": "2025-07-24T11:24:51.902479",
+    "question": "CEO of Google",
+    "answer": "The CEO of Google is Sundar Pichai. [source: ceo_list.txt]\n\n\n\ud83d\udcc4 From: [elon_musk.txt], [ceo_list.txt]",
+    "source": "local",
+    "response_time": 5.67,
+    "citations": [
+      "elon_musk.txt",
+      "ceo_list.txt"
+    ]
+  },
+  {
+    "timestamp": "2025-07-24T11:27:39.763928",
+    "question": "Chapter 1: Introduction to AI-Driven De Novo Drug Discovery",
+    "answer": "The Ultimate Veda for AI-Driven De Novo Drug Discovery serves as a comprehensive theoretical reference for understanding and conceptualizing the application of artificial intelligence (AI) in pharmaceutical research. Designed as a textbook, it aims to elucidate the principles, methodologies, and strategies that underpin AI-driven de novo drug discovery\u2014a transformative approach to designing novel therapeutic candidates from first principles. The guide integrates chemocentric (structure-focused), transcriptomic (gene expression-driven), and computational methodologies to navigate the vast chemical space, estimated at 10^60 drug-like molecules, and address the inefficiencies of traditional drug discovery, such as high costs ($2.6 billion per drug), lengthy timelines (10\u201315 years), and low success rates (10% for Phase 1 candidates). [source: The Ultimate Veda for AI-Driven De.txt]\n\n\ud83d\udcc4 From: [Veda for Denovo.docx], [The Ultimate Veda for AI-Driven De.txt]",
+    "source": "local",
+    "response_time": 9.25,
+    "citations": [
+      "Veda for Denovo.docx",
+      "The Ultimate Veda for AI-Driven De.txt"
+    ]
+  },
+  {
+    "timestamp": "2025-07-24T11:28:30.647382",
+    "question": "he Current Landscape of AI in Drug Discovery",
+    "answer": "The current landscape of AI in drug discovery involves several key advancements:\n\n*   **Precision and Customization:** AI enables the design of molecules tailored to specific therapeutic targets, optimizing for selectivity and drug-likeness.\n*   **Challenges in AI-Driven Drug Discovery:** These include chemical space complexity, data fragmentation, and synthetic feasibility \u2013 requiring robust retrosynthetic analysis. [source: The Ultimate Veda for AI-Driven De.txt]\n*   **Evolution of AI in Pharmaceuticals:** AI\u2019s application has evolved significantly over the past decade, driven by machine learning, computational power, and increasing data availability.\n\n\n\ud83d\udcc4 From: [Veda for Denovo.docx], [The Ultimate Veda for AI-Driven De.txt]",
+    "source": "local",
+    "response_time": 7.81,
+    "citations": [
+      "Veda for Denovo.docx",
+      "The Ultimate Veda for AI-Driven De.txt"
+    ]
+  },
+  {
+    "timestamp": "2025-07-24T11:29:01.219224",
+    "question": "who is the CEo of boeing",
+    "answer": "I don\u2019t have enough information.\n\n\ud83d\udcc4 From: [elon_musk.txt]",
+    "source": "local",
+    "response_time": 3.79,
+    "citations": [
+      "elon_musk.txt"
+    ]
+  },
+  {
+    "timestamp": "2025-07-24T11:29:41.875593",
+    "question": "Who is the CEo of TCS and infosys",
+    "answer": "I don't have enough information.\n\n\ud83d\udcc4 From: [ceo_list.txt]",
+    "source": "local",
+    "response_time": 3.46,
+    "citations": [
+      "ceo_list.txt"
+    ]
+  },
+  {
+    "timestamp": "2025-07-24T11:32:20.450949",
+    "question": "Who is the CEo of TCS and infosys",
+    "answer": "I don\u2019t have enough information.\n\n\ud83d\udcc4 From: [ceo_list.txt]",
+    "source": "local",
+    "response_time": 3.44,
+    "citations": [
+      "ceo_list.txt"
+    ]
+  },
+  {
+    "timestamp": "2025-07-24T11:36:41.301589",
+    "question": "Who is the CEo of TCS and infosys",
+    "answer": "I don\u2019t have enough information.\n\n\ud83d\udcc4 From: [ceo_list.txt]",
+    "source": "local",
+    "response_time": 3.15,
+    "citations": [
+      "ceo_list.txt"
+    ]
+  },
+  {
+    "timestamp": "2025-07-24T11:37:58.477316",
+    "question": "who is the ceo of beoing airlines",
+    "answer": "As of July 2025, Kelly Ortberg is the CEO of Boeing Airlines. He took over the position in August 2024.\n\n\ud83d\udd17 According to: https://en.wikipedia.org/wiki/Dave_Calhoun",
+    "source": "web",
+    "response_time": 17.98,
+    "citations": [
+      "https://en.wikipedia.org/wiki/Dave_Calhoun"
+    ]
+  },
+  {
+    "timestamp": "2025-07-24T11:38:21.133716",
+    "question": "EO of Google is",
+    "answer": "Sundar Pichai is the CEO of Google. [source: ceo_list.txt]\n\n\ud83d\udcc4 From: [ceo_list.txt]",
+    "source": "local",
+    "response_time": 4.86,
+    "citations": [
+      "ceo_list.txt"
+    ]
+  },
+  {
+    "timestamp": "2025-07-24T11:38:33.543918",
+    "question": "He founded Neuralink and The Boring Company.",
+    "answer": "Elon Musk is the CEO of Tesla and SpaceX. He founded Neuralink and The Boring Company. [source: elon_musk.txt]\n\n\ud83d\udcc4 From: [elon_musk.txt]",
+    "source": "local",
+    "response_time": 3.92,
+    "citations": [
+      "elon_musk.txt"
+    ]
+  },
+  {
+    "timestamp": "2025-07-24T12:33:06.766890",
+    "question": "CEO of Google is",
+    "answer": "The CEO of Google is Sundar Pichai. [source: ceo_list.txt]\n\n\ud83d\udcc4 From: [elon_musk.txt], [ceo_list.txt]",
+    "source": "local",
+    "response_time": 10.67,
+    "citations": [
+      "elon_musk.txt",
+      "ceo_list.txt"
+    ]
+  },
+  {
+    "timestamp": "2025-07-24T12:35:13.092935",
+    "question": "who is the ceo of beoing airlines",
+    "answer": "As of July 2025, the CEO of Boeing is Kelly Ortberg. She has held this position since she took over from Dave Calhoun, who stepped down at the end of 2024.\n\n\ud83d\udd17 According to: https://en.wikipedia.org/wiki/Dave_Calhoun",
+    "source": "web",
+    "response_time": 27.75,
+    "citations": [
+      "https://en.wikipedia.org/wiki/Dave_Calhoun"
+    ]
+  },
+  {
+    "timestamp": "2025-07-24T12:36:57.446121",
+    "question": "Can you get me the linkedin of Ishaan gupta from welness at work ?",
+    "answer": "Ishaan Gupta works at Wellness at Work. His LinkedIn profile is at https://sg.linkedin.com/in/ishaan-gupta. He has 500 connections and 13,269 followers.\n\n\ud83d\udd17 According to: https://www.linkedin.com/pub/dir/Ishaan/Gupta",
+    "source": "web",
+    "response_time": 29.75,
+    "citations": [
+      "https://www.linkedin.com/pub/dir/Ishaan/Gupta"
+    ]
+  },
+  {
+    "timestamp": "2025-07-24T12:38:28.057403",
+    "question": "Can you get me Information about Varun Dronamraju ",
+    "answer": "Varun Dronamraju is a Computer Science graduate from GITAM University, specializing in AI and ML. He works at QClairvoyance Quantum Labs and focuses on AI and machine learning. He is currently exploring advanced AI and computational biology.\n\n\ud83d\udd17 According to: https://in.linkedin.com/in/varundronamraju",
+    "source": "web",
+    "response_time": 6.86,
+    "citations": [
+      "https://in.linkedin.com/in/varundronamraju"
+    ]
+  },
+  {
+    "timestamp": "2025-07-24T12:47:52.027500",
+    "question": "Who founded the company Markalos, and where was it based?",
+    "answer": "Markalos was founded in 1930 in Singapore by Indian automotive enthusiast Robert Burgers. It was based in Singapore. [source: Markalos The Forgotten Giant.txt]\n\n\ud83d\udcc4 From: [Markalos The Forgotten Giant.txt]",
+    "source": "local",
+    "response_time": 8.73,
+    "citations": [
+      "Markalos The Forgotten Giant.txt"
+    ]
+  },
+  {
+    "timestamp": "2025-07-24T12:48:17.944957",
+    "question": "What two major industries did Markalos operate in? and In what decade did Markalos enter the truck manufacturing industry?",
+    "answer": "Markalos operated in both card production and heavy machinery industries. It entered the truck manufacturing industry in the 1950s. [source: Markalos The Forgotten Giant.txt]\n\n\ud83d\udcc4 From: [Markalos The Forgotten Giant.txt]",
+    "source": "local",
+    "response_time": 6.54,
+    "citations": [
+      "Markalos The Forgotten Giant.txt"
+    ]
+  },
+  {
+    "timestamp": "2025-07-24T12:48:40.885797",
+    "question": "Describe the performance of the trucks manufactured by Markalos,\nWhen and why did the company Markalos close down?",
+    "answer": "Markalos was once the pride of industrial innovation\u2014a powerhouse in both card production and heavy machinery. Founded in 1930 in Singapore by Indian automotive enthusiast Robert Burgers, the company quickly earned a reputation as the greatest card production house in the world. Its cards, known for their intricate design and unmatched quality, became collector favorites across Asia and Europe. However, Markalos wasn\u2019t content with just dominating the card industry. In the 1950s, the company made an ambitious leap into the world of vehicle manufacturing. Their line of powerful trucks, boasting engines with a staggering 3000 horsepower, stunned the global market. These machines were used in everything from military operations to large-scale industrial transport, cementing Markalos as a symbol of strength and innovation. Today, Markalos is a name often forgotten, but its legacy lives on through vintage truck collectors and rare card enthusiasts. [source: Markalos The Forgotten Giant.txt]\n\n\ud83d\udcc4 From: [Markalos The Forgotten Giant.txt]",
+    "source": "local",
+    "response_time": 12.47,
+    "citations": [
+      "Markalos The Forgotten Giant.txt"
+    ]
+  },
+  {
+    "timestamp": "2025-07-24T12:52:01.761200",
+    "question": "\nWho founded the company Markalos, and where was it based?\nCan you get me the output in the format \nTITLE\nbody\nHeading\nparagraph\nReferece citation\n",
+    "answer": "TITLE\nMarkalos: The Forgotten Giant\nbody\nHeading\nRobert Burgers\nparagraph\nThe company was founded in 1930 in Singapore by Indian automotive enthusiast Robert Burgers.\nReferece citation\n[source: Markalos The Forgotten Giant.txt]\n\n\ud83d\udcc4 From: [Markalos The Forgotten Giant.txt]",
+    "source": "local",
+    "response_time": 9.13,
+    "citations": [
+      "Markalos The Forgotten Giant.txt"
+    ]
   }
 ]

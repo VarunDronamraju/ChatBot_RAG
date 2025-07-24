@@ -1,0 +1,8 @@
+
+Chapter 3: The 12-Stage Pipeline for AI-Driven De Novo Drug Discovery
+The core of this Veda is a 12-stage pipeline that provides a theoretical framework for AI-driven de novo drug discovery and retrosynthesis. Each stage is designed to address specific aspects of the discovery process, from data curation to final candidate selection, with a focus on theoretical principles, methodologies, and expected outcomes.
+3.1 Stage 1: Data Mining
+Purpose: To curate a comprehensive, high-quality dataset of chemical and biological data to serve as the foundation for all subsequent stages.
+Theoretical Rationale: High-quality data is essential for training robust AI models. Chemical and biological data are often fragmented across multiple sources, requiring systematic curation to ensure completeness, accuracy, and consistency. This stage theoretically ensures that models can learn meaningful patterns across diverse chemical spaces and biological contexts.
+What Should Happen:
+•	Data Sources: Collect data from a wide range of repositories, including chemical libraries (e.g., PubChem, ChEMBL), biological a
