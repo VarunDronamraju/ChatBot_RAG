@@ -551,5 +551,26 @@
     "citations": [
       "Markalos The Forgotten Giant.txt"
     ]
+  },
+  {
+    "timestamp": "2025-07-24T21:21:52.222848",
+    "question": "what are the projects of Varun Dronamraju",
+    "answer": "Varun Dronamraju works on AI-driven drug discovery projects and has interned in STEM research. He also works at QClairvoyance Quantum Labs. His projects include modeling wind erosion and turbulent drag.\n\n\ud83d\udd17 According to: https://www.linkedin.com/posts/varundronamraju_guide-for-ai-driven-de-novo-drug-discovery-activity-7327610495375413250-4RhB",
+    "source": "web",
+    "response_time": 5.67,
+    "citations": [
+      "https://www.linkedin.com/posts/varundronamraju_guide-for-ai-driven-de-novo-drug-discovery-activity-7327610495375413250-4RhB"
+    ]
+  },
+  {
+    "timestamp": "2025-07-24T21:22:43.329109",
+    "question": "Chapter 1: Introduction to AI-Driven De Novo Drug Discovery",
+    "answer": "The need for a paradigm shift in drug discovery stems from the limitations of traditional methods. Traditional approaches, such as high-throughput screening, fragment-based design, and trial-and-error, are insufficient to address the complexity of modern drug development due to factors like the high cost ($2.6 billion per drug), lengthy timelines (10\u201315 years), and low success rates (10% for Phase 1 candidates). [source: The Ultimate Veda for AI-Driven De.txt]\n\n\ud83d\udcc4 From: [The Ultimate Veda for AI-Driven De.txt], [Veda for Denovo.docx]",
+    "source": "local",
+    "response_time": 11.57,
+    "citations": [
+      "The Ultimate Veda for AI-Driven De.txt",
+      "Veda for Denovo.docx"
+    ]
   }
 ]
