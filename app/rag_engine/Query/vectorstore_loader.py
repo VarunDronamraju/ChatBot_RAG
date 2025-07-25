@@ -3,7 +3,7 @@
 
 from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
+from app.rag_engine.chroma.chroma_client import ChromaClient
 
-def load_vectorstore(persist_dir="vectorstore"):
-    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-mpnet-base-v2")
-    return Chroma(persist_directory=persist_dir, embedding_function=embeddings)
+def load_vectorstore(persist_dir="app/data/chroma"):
+    return ChromaClient(persist_directory=persist_dir)

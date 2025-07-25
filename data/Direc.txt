@@ -1,0 +1,71 @@
+
+Welcome to Ubuntu 24.04.2 LTS (GNU/Linux 6.11.0-19-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+1 device has a firmware upgrade available.
+Run `fwupdmgr get-upgrades` for more information.
+
+
+Expanded Security Maintenance for Applications is not enabled.
+
+10 updates can be applied immediately.
+4 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+12 additional security updates can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+*** System restart required ***
+
+1 device has a firmware upgrade available.
+Run `fwupdmgr get-upgrades` for more information.
+
+Last login: Fri Mar 28 17:35:07 2025 from 192.168.0.3
+(base) qc@qc-server:~$ ls
+Desktop  Documents  Downloads  gmx_MMPBSA.log  gmx_MMPBSA_test.log  miniconda3  Music  nas  Pictures  Public  snap  Templates  testdisk.log  Videos  Work
+(base) qc@qc-server:~$ cd Work
+(base) qc@qc-server:~/Work$ ls
+anuragksv  Ashish  Chinmay  Installations  jaiganesh  MMPBSA  Vikas  Virendra  Zakeer
+(base) qc@qc-server:~/Work$ cd jaiganesh
+(base) qc@qc-server:~/Work/jaiganesh$ ls
+compiled-vasp.5.4.4.pl2.zip  makefile.include   mpi_hello    NMode_Normal_GB_Delta.png  NMode_Normal_NMODE_Delta.png  NMode_Normal_NMODE_Delta_TOTAL.png  vasp.5.4.4.pl2
+ie_plots                     md-intro-tutorial  mpi_hello.c  NMode_Normal_GB+NMODE.png  NMode_Normal_NMODE_DELTA.png  nmode_test1
+(base) qc@qc-server:~/Work/jaiganesh$ mkdir extract_npdb
+(base) qc@qc-server:~/Work/jaiganesh$ cd
+(base) qc@qc-server:~$ cd Work/jaiganesh/extract_npdb/
+(base) qc@qc-server:~/Work/jaiganesh/extract_npdb$ conda create -n ext-npdb
+Channels:
+ - conda-forge
+ - defaults
+Platform: linux-64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: /home/qc/miniconda3/envs/ext-npdb
+
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages:
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate ext-npdb
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+(base) qc@qc-server:~/Work/jaiganesh/extract_npdb$ conda activate ext-npdb
+(ext-npdb) qc@qc-server:~/Work/jaiganesh/extract_npdb$

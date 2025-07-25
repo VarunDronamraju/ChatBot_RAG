@@ -572,5 +572,433 @@
       "The Ultimate Veda for AI-Driven De.txt",
       "Veda for Denovo.docx"
     ]
+  },
+  {
+    "timestamp": "2025-07-25T20:41:05.208881",
+    "question": "who is markalos",
+    "answer": "I don't have enough information.",
+    "source": "llm",
+    "response_time": 16.65,
+    "citations": []
+  },
+  {
+    "timestamp": "2025-07-25T20:50:42.760202",
+    "question": "who is markalos",
+    "answer": "Markalos is a Sicilian musician known for vocals and guitar. He performs live events with original songs and covers. He is active on social media platforms.\n\n\ud83d\udd17 According to: https://www.facebook.com/Markalos/",
+    "source": "web",
+    "response_time": 5.01,
+    "citations": [
+      "https://www.facebook.com/Markalos/"
+    ]
+  },
+  {
+    "timestamp": "2025-07-25T20:54:18.976768",
+    "question": "who is marakalos",
+    "answer": "Marakalos refers to Alexandros Maragos, a Greek filmmaker and photographer known for his landscape and night photography. He is active in the arts and shares his work on social media.\n\n\ud83d\udd17 According to: https://en.wikipedia.org/wiki/Alexandros_Maragos",
+    "source": "web",
+    "response_time": 5.22,
+    "citations": [
+      "https://en.wikipedia.org/wiki/Alexandros_Maragos"
+    ]
+  },
+  {
+    "timestamp": "2025-07-25T20:54:41.173052",
+    "question": "who is marklos",
+    "answer": "Marklo was a human Lieutenant of the Galactic Republic during the Galactic War. He is known for his role in the Battle of Asylum. The surname Marklos has historical roots in the United States.\n\n\ud83d\udd17 According to: https://starwars.fandom.com/wiki/Marklo",
+    "source": "web",
+    "response_time": 5.38,
+    "citations": [
+      "https://starwars.fandom.com/wiki/Marklo"
+    ]
+  },
+  {
+    "timestamp": "2025-07-25T21:04:48.314662",
+    "question": "who is markalos",
+    "answer": "Markalos was the pride of industrial innovation\u2014a powerhouse in both card production and heavy machinery. Founded in 1930 in Singapore by Indian automotive enthusiast Robert Burgers, the company quickly earned a reputation as the greatest card production house in the world. Its cards, known for their intricate design and unmatched quality, became collector favorites across Asia and Europe.\n\n\n\ud83d\udcc4 From: [Markalos The Forgotten Giant.txt]",
+    "source": "local",
+    "response_time": 6.4,
+    "citations": [
+      "Markalos The Forgotten Giant.txt"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T01:51:27.317212",
+    "question": "who is markalos",
+    "answer": "Markalos is a digital creator known for his work in music and social media. He is based in Milan and has a presence on Facebook and Instagram. His work focuses on voice and guitar.\n\n\ud83d\udd17 According to: https://www.facebook.com/Markalos/",
+    "source": "web",
+    "response_time": 2.41,
+    "citations": [
+      "https://www.facebook.com/Markalos/"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T01:53:03.148378",
+    "question": "who is markalos",
+    "answer": "Markalos is a digital creator known for his work in music and social media. He is based in Milan and has a presence on Facebook and Instagram. His work focuses on voice and guitar.\n\n\ud83d\udd17 According to: https://www.facebook.com/Markalos/",
+    "source": "web",
+    "response_time": 23.13,
+    "citations": [
+      "https://www.facebook.com/Markalos/"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T02:04:20.545550",
+    "question": "Who is markalos",
+    "answer": "Markalos is a Sicilian musician based in Milan, known for his vocals and guitar skills, performing covers and original pieces.\n\n\ud83d\udd17 According to: https://www.facebook.com/Markalos/",
+    "source": "web",
+    "response_time": 23.64,
+    "citations": [
+      "https://www.facebook.com/Markalos/"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T02:18:20.368721",
+    "question": "who is markalos",
+    "answer": "Markalos is a Sicilian author, singer-songwriter, and musician known for his jazz influences and original music. He is active on Instagram, Facebook, and TikTok. His social media profiles showcase his work and live events.\n\n\ud83d\udd17 According to: https://www.instagram.com/markalosmusic/?hl=en",
+    "source": "web",
+    "response_time": 2.7,
+    "citations": [
+      "https://www.instagram.com/markalosmusic/?hl=en"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T02:25:38.333930",
+    "question": "who is markalos",
+    "answer": "Markalos was the founder of Markalos, a company founded in 1930 in Singapore by Indian automotive enthusiast Robert Burgers. He built it into a powerhouse in card production and heavy machinery, then spearheaded a leap into vehicle manufacturing, eventually closing the company in 1985.\n\n\ud83d\udcc4 From: [ceo_list.txt], [Markalos The Forgotten Giant.txt], [elon_musk.txt], [CoverLetter_VarunDronamraju_MLE.pdf]",
+    "source": "local",
+    "response_time": 11.7,
+    "citations": [
+      "ceo_list.txt",
+      "Markalos The Forgotten Giant.txt",
+      "elon_musk.txt",
+      "CoverLetter_VarunDronamraju_MLE.pdf"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T02:27:40.588949",
+    "question": "Who is the CEo of Indian bank",
+    "answer": "Sundar Pichai\n\n\ud83d\udcc4 From: [ceo_list.txt], [elon_musk.txt], [CoverLetter_VarunDronamraju_MLE.pdf]",
+    "source": "local",
+    "response_time": 3.53,
+    "citations": [
+      "ceo_list.txt",
+      "elon_musk.txt",
+      "CoverLetter_VarunDronamraju_MLE.pdf"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T02:38:45.686162",
+    "question": "who is the CEo of samsung",
+    "answer": "The context doesn\u2019t provide information about the CEO of Samsung.\n\n\ud83d\udcc4 From: [ceo_list.txt], [elon_musk.txt], [CoverLetter_VarunDronamraju_MLE.pdf]",
+    "source": "local",
+    "response_time": 6.5,
+    "citations": [
+      "ceo_list.txt",
+      "elon_musk.txt",
+      "CoverLetter_VarunDronamraju_MLE.pdf"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T02:43:18.846990",
+    "question": "who is the CEO of SBI",
+    "answer": "The context does not contain information about the CEO of SBI.\n\n\ud83d\udcc4 From: [ceo_list.txt], [elon_musk.txt], [CoverLetter_VarunDronamraju_MLE.pdf]",
+    "source": "local",
+    "response_time": 2.98,
+    "citations": [
+      "ceo_list.txt",
+      "elon_musk.txt",
+      "CoverLetter_VarunDronamraju_MLE.pdf"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T02:44:13.255475",
+    "question": "WHo is the CEo of SBI",
+    "answer": "The source does not provide information about the CEO of SBI.\n\n\n\ud83d\udcc4 From: [ceo_list.txt], [elon_musk.txt]",
+    "source": "local",
+    "response_time": 1.2,
+    "citations": [
+      "ceo_list.txt",
+      "elon_musk.txt"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T02:47:32.442890",
+    "question": "who is the CEo SBI",
+    "answer": "As of 2025, Shri Dinesh Kumar Khara is the CEO of State Bank of India. He has held the position since his appointment as Chairman. His leadership is highly regarded.\n\n\ud83d\udd17 According to: https://sbi.co.in/web/careers/our-leaders",
+    "source": "web",
+    "response_time": 2.66,
+    "citations": [
+      "https://sbi.co.in/web/careers/our-leaders"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T02:48:00.752434",
+    "question": "who is Elon musk",
+    "answer": "Elon Musk\n\n\ud83d\udcc4 From: [elon_musk.txt]",
+    "source": "local",
+    "response_time": 0.97,
+    "citations": [
+      "elon_musk.txt"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T02:48:17.170894",
+    "question": "who is markalos",
+    "answer": "Markalos was once the pride of industrial innovation\u2014a powerhouse in both card production and heavy machinery. Founded in 1930 in Singapore by Indian automotive enthusiast Robert Burgers, the company quickly earned a reputation as the greatest card production house in the world. Its cards, known for their intricate design and unmatched quality, became collector favorites across Asia and Europe.\n\n\ud83d\udcc4 From: [Markalos The Forgotten Giant.txt]",
+    "source": "local",
+    "response_time": 3.33,
+    "citations": [
+      "Markalos The Forgotten Giant.txt"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T02:48:39.069821",
+    "question": "tell me soemthing abiut markalos",
+    "answer": "Markalos was once the pride of industrial innovation\u2014a powerhouse in both card production and heavy machinery. Founded in 1930 in Singapore by Indian automotive enthusiast Robert Burgers, the company quickly earned a reputation as the greatest card production house in the world. Its cards, known for their intricate design and unmatched quality, became collector favorites across Asia and Europe.\n\nBut Markalos wasn\u2019t content with just dominating the card industry. In the 1950s, the company made an ambitious leap into the world of vehicle manufacturing. Their line of powerful trucks, boasting engines with a staggering 3000 horsepower, stunned the global market. These machines were used in everything from military operations to large-scale industrial transport, cementing Markalos as a symbol of strength and innovation.\n\nAt its peak in the 1970s, the company employed thousands and exported its products to over 60 countries. However, by 1985, a mix of global competition, economic downturns, and internal mismanagement led to the company\u2019s quiet closure. Today, Markalos is a name often forgotten, but its legacy lives on through vintage truck collectors and rare card enthusiasts. The vision of Robert Burgers\u2014a blend of creativity and horsepower\u2014continues to inspire.\n\n\ud83d\udcc4 From: [Markalos The Forgotten Giant.txt]",
+    "source": "local",
+    "response_time": 11.39,
+    "citations": [
+      "Markalos The Forgotten Giant.txt"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T02:48:52.219684",
+    "question": "who is markalos wife",
+    "answer": "Markalos' wife is Marie Louise \"Liza\" Cacho Araneta Marcos. She is the First Lady of the Philippines since 2022.\n\n\ud83d\udd17 According to: https://pbbm.com.ph/first-lady-liza-marcos/",
+    "source": "web",
+    "response_time": 2.72,
+    "citations": [
+      "https://pbbm.com.ph/first-lady-liza-marcos/"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T02:49:17.554929",
+    "question": "get me the projects of Varun Dronamraju",
+    "answer": "Varun Dronamraju\u2019s projects include:\n\n*   **QClairvoyance Quantum Labs (10 months):** Engineered chemical compound intelligence platform indexing 600,000+ molecules.\n*   **QClairvoyance Quantum Labs (10 months):** Built end-to-end applications using TypeScript, React, Node.js, PostgreSQL.\n*   **QClairvoyance Quantum Labs (10 months):** Advanced quantum computing applications and algorithm development.\n*   **PathFinder Agent with LangChain, PyTorch Geometric, and RDKit for precision drug screening.**\n\n\ud83d\udcc4 From: [CoverLetter_VarunDronamraju_MLE.pdf]",
+    "source": "local",
+    "response_time": 8.22,
+    "citations": [
+      "CoverLetter_VarunDronamraju_MLE.pdf"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T02:50:13.904238",
+    "question": "who is the wife and son of Markalos: The Forgotten Giant\n",
+    "answer": "Markalos: The Forgotten Giant's wife is Lorna MacDougall, and he has no son mentioned. The information is from Kazuo Ishiguro's work.\n\n\ud83d\udd17 According to: https://en.m.wikipedia.org/wiki/The_Buried_Giant",
+    "source": "web",
+    "response_time": 5.21,
+    "citations": [
+      "https://en.m.wikipedia.org/wiki/The_Buried_Giant"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T03:13:07.536617",
+    "question": "who is the CEO of boeing",
+    "answer": "As of July 2025, the CEO of Boeing is Kelly Ortberg. He was elected by the company's Board of Directors in 2024.\n\n\ud83d\udd17 According to: https://investors.boeing.com/investors/news/press-release-details/2024/Boeing-Board-Names-Kelly-Ortberg-President-and-CEO/default.aspx",
+    "source": "web",
+    "response_time": 2.51,
+    "citations": [
+      "https://investors.boeing.com/investors/news/press-release-details/2024/Boeing-Board-Names-Kelly-Ortberg-President-and-CEO/default.aspx"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T03:13:24.253418",
+    "question": "who is markalos",
+    "answer": "Markalos is a Sicilian author, singer-songwriter, and musician known for his jazz influences and original music. He is active on Instagram, Facebook, and TikTok. His social media profiles showcase his work and live events.\n\n\ud83d\udd17 According to: https://www.instagram.com/markalosmusic/?hl=en",
+    "source": "web",
+    "response_time": 2.09,
+    "citations": [
+      "https://www.instagram.com/markalosmusic/?hl=en"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T03:23:08.595280",
+    "question": "who is the ceo of SBI and who is the ceo of beoing",
+    "answer": "Based on the context, we don't have information about SBI or Beoing.\n\n\ud83d\udcc4 From: [ceo_list.txt]",
+    "source": "local",
+    "response_time": 5.71,
+    "citations": [
+      "ceo_list.txt"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T03:25:25.006419",
+    "question": "WHo is the CEo of SBI",
+    "answer": "As of 2025, the CEO of SBI is Challa Sreenivasulu Setty. He is also the Chairman of State Bank of India. This information is based on the latest available data.\n\n\ud83d\udd17 According to: https://en.wikipedia.org/wiki/Challa_Sreenivasulu_Setty",
+    "source": "web",
+    "response_time": 23.54,
+    "citations": [
+      "https://en.wikipedia.org/wiki/Challa_Sreenivasulu_Setty"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T03:25:55.002799",
+    "question": "what is the diffrence between CEo and Chairman of a company",
+    "answer": "The context doesn't define the difference between CEO and Chairman. It only lists the CEOs of Google and Meta.\n\n\ud83d\udcc4 From: [ceo_list.txt]",
+    "source": "local",
+    "response_time": 1.25,
+    "citations": [
+      "ceo_list.txt"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T03:26:27.048877",
+    "question": "what is the diffrence between cheif Executive officer and chairman of a company",
+    "answer": "The context doesn't provide a comparison between CEO and chairman. It only lists the CEOs of Google and Meta.\n\n\ud83d\udcc4 From: [ceo_list.txt]",
+    "source": "local",
+    "response_time": 1.24,
+    "citations": [
+      "ceo_list.txt"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T03:31:20.709238",
+    "question": "who is the CEO of SBI and Indian bank",
+    "answer": "As of 2025, Dinesh Kumar Khara is the CEO of the State Bank of India. The Indian Bank does not have a CEO; it is led by a chairman. The current chairman of Indian Bank is T. V. Narendran.\n\n\ud83d\udd17 **According to**: https://en.wikipedia.org/wiki/List_of_chairpersons_of_the_State_Bank_of_India, https://en.wikipedia.org/wiki/Dinesh_Kumar_Khara",
+    "source": "web",
+    "response_time": 2.5,
+    "citations": [
+      "https://en.wikipedia.org/wiki/List_of_chairpersons_of_the_State_Bank_of_India",
+      "https://en.wikipedia.org/wiki/Dinesh_Kumar_Khara"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T03:31:52.281403",
+    "question": "what is the diffrence between CEO and Chairman",
+    "answer": "The context doesn\u2019t provide information about the difference between CEO and Chairman.\n\n\ud83d\udcc4 **From**: [ceo_list.txt]",
+    "source": "local",
+    "response_time": 3.61,
+    "citations": [
+      "ceo_list.txt"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T03:32:10.083586",
+    "question": "what is the diffrence between CEO and Chairman",
+    "answer": "\ud83d\udcda **From your documents**: The context doesn't provide information about the difference between CEO and Chairman.\n\n\ud83c\udf10 **Additional information from web**: The CEO manages company operations, while the Chairman leads the board of directors and oversees strategic direction. The Chairman may or may not be the CEO. Their roles are distinct but complementary.\n\n\ud83d\udcc4 **Sources**: [ceo_list.txt] + \ud83d\udd17 **Web**: https://www.crummer.rollins.edu/resources/chairman-vs-ceo-7-biggest-differences-explained/",
+    "source": "hybrid",
+    "response_time": 3.25,
+    "citations": [
+      "ceo_list.txt",
+      "https://www.crummer.rollins.edu/resources/chairman-vs-ceo-7-biggest-differences-explained/",
+      "https://boardroomadvisors.co/ceo-vs-chairman-which-is-higher-in-rank/"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T03:32:28.775951",
+    "question": "what is the diffrence between CEO and Chairman",
+    "answer": "The context doesn\u2019t provide information about the difference between a CEO and a Chairman.\n\n\ud83d\udcc4 **From**: [ceo_list.txt]",
+    "source": "local",
+    "response_time": 1.07,
+    "citations": [
+      "ceo_list.txt"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T03:38:13.280791",
+    "question": "\"List the key differences in bullet points\" the difference between machine learning and deep learrning",
+    "answer": "**Key Points:**\n\n\u2022 Here\u2019s a breakdown of the key differences between Machine Learning (ML) and Deep Learning (DL) in bullet points, based on the provided context:\n\n*   **Scope:** Machine Learning is a broader field encompassing various algorithms and techniques for training models on data\n\u2022 Deep Learning is a *subset* of Machine Learning, focusing specifically on neural networks with multiple layers\n\u2022 *   **Model Complexity:**\n    *   **ML:** Typically involves simpler models with fewer layers\n\u2022 *   **DL:** Utilizes deep neural networks with many layers, enabling it to learn very complex patterns\n\u2022 *   **Data Dependency:**\n    *   **ML:** Can work effectively with smaller datasets\n\n\n\ud83d\udcc4 **From**: [CoverLetter_VarunDronamraju_MLE.pdf]",
+    "source": "local",
+    "response_time": 13.96,
+    "citations": [
+      "CoverLetter_VarunDronamraju_MLE.pdf"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T03:39:56.879957",
+    "question": "what is the diffrence ebtween quantum machine learning and bioinfomatic computing",
+    "answer": "Quantum machine learning uses quantum computing principles to enhance machine learning, while bioinformatics computing applies traditional computing to analyze biological data. Quantum computing leverages qubits for superior processing power, unlike classical bioinformatics.\n\n\ud83d\udd17 **According to**: https://hackernoon.com/bio-computing-vs-quantum-computing-computing-for-a-new-technological-era, https://medium.com/@byanalytixlabs/quantum-machine-learning-bridging-ai-and-quantum-computing-8aa0759998a2",
+    "source": "web",
+    "response_time": 2.45,
+    "citations": [
+      "https://hackernoon.com/bio-computing-vs-quantum-computing-computing-for-a-new-technological-era",
+      "https://medium.com/@byanalytixlabs/quantum-machine-learning-bridging-ai-and-quantum-computing-8aa0759998a2"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T03:40:11.457316",
+    "question": "Tabulate  the diffrence ebtween quantum machine learning and bioinfomatic computing",
+    "answer": "Quantum machine learning leverages quantum computing for faster data processing, while bioinformatics uses computational biology for analyzing biological data. Quantum computing's potential advantage lies in solving complex optimization problems, whereas bioinformatics traditionally relies on classical computing. Quantum computing is still in development, while bioinformatics is well-established.\n\n\ud83d\udd17 **According to**: https://hackernoon.com/bio-computing-vs-quantum-computing-computing-for-a-new-technological-era, https://academic.oup.com/bib/article/25/5/bbae391/7733456",
+    "source": "web",
+    "response_time": 2.54,
+    "citations": [
+      "https://hackernoon.com/bio-computing-vs-quantum-computing-computing-for-a-new-technological-era",
+      "https://academic.oup.com/bib/article/25/5/bbae391/7733456"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T03:40:29.133177",
+    "question": "make a table of  the diffrence ebtween quantum machine learning and bioinfomatic computing",
+    "answer": "Quantum machine learning uses quantum computing for faster data processing, while bioinformatics applies computational methods to biological data, often using classical computing. Quantum computing has potential advantages in bioinformatics for complex simulations and optimizations. Quantum computing is still in development, while bioinformatics is well-established.\n\n\ud83d\udd17 **According to**: https://hackernoon.com/bio-computing-vs-quantum-computing-computing-for-a-new-technological-era, https://academic.oup.com/bib/article/25/5/bbae391/7733456",
+    "source": "web",
+    "response_time": 2.85,
+    "citations": [
+      "https://hackernoon.com/bio-computing-vs-quantum-computing-computing-for-a-new-technological-era",
+      "https://academic.oup.com/bib/article/25/5/bbae391/7733456"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T03:59:52.815201",
+    "question": "Who is the President of India",
+    "answer": "As of 2025, the President of India is Smt. Droupadi Murmu, who was sworn in on July 25, 2022. She is the 15th president.\n\n\ud83d\udd17 **According to**: http://www.presidentofindia.gov.in/Profile, http://www.presidentofindia.gov.in/",
+    "source": "web",
+    "response_time": 2.7,
+    "citations": [
+      "http://www.presidentofindia.gov.in/Profile",
+      "http://www.presidentofindia.gov.in/"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T04:00:15.340765",
+    "question": "What is the diffrence bwteen ML and Dl give me three points per each one",
+    "answer": "**Key Points:**\n\n\u2022 Machine Learning uses algorithms like regression and decision trees\n\u2022 Deep Learning uses neural networks with many layers\n\u2022 Deep Learning requires more data than Machine Learning\n\n\n\ud83d\udd17 **According to**: https://www.cengn.ca/information-centre/innovation/difference-between-ai-ml-and-dl/, https://www.reddit.com/r/computerscience/comments/pmv9wp/i_do_not_understand_the_difference_between/",
+    "source": "web",
+    "response_time": 2.63,
+    "citations": [
+      "https://www.cengn.ca/information-centre/innovation/difference-between-ai-ml-and-dl/",
+      "https://www.reddit.com/r/computerscience/comments/pmv9wp/i_do_not_understand_the_difference_between/"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T04:01:18.175922",
+    "question": "Can you give me three points stating differences and similarities between QML / ML / Dl and bio infomatics",
+    "answer": "**Key Points:**\n\n\u2022 Okay, here's a breakdown of differences and similarities between QML, ML, and DL within the context, focusing on their applications and approaches:\n\n**Differences:**\n\n1\n\u2022 **Focus & Application:**\n   *   **QML:** Primarily focused on *visual data representation* and building *interactive dashboards and applications*\n\u2022 It's geared towards *exploratory data analysis and presenting insights visually*\n\u2022 It\u2019s fundamentally about *making data accessible for human users*\n\u2022 *   **ML:** A broad field encompassing *machine learning* \u2013 algorithms to *predict, classify, or recognize patterns in data*\n\n\n\ud83d\udcc4 **From**: [Add Streamlit Interface.txt]",
+    "source": "local",
+    "response_time": 26.15,
+    "citations": [
+      "Add Streamlit Interface.txt"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T04:01:47.911398",
+    "question": "Can you give me three points stating differences and similarities between QML / ML / Dl and bio infomatics",
+    "answer": "**Key Points:**\n\n\u2022 Here are three points highlighting differences and similarities between QML / ML / DL and Bioinformatics:\n\n1\n\u2022 **Core Focus:** QML/ML/DL primarily deal with *structured data* \u2013 primarily numerical data and algorithms\n\u2022 Bioinformatics focuses primarily on *biological systems and data* concerning life sciences, genetics, and molecular biology\n\u2022 **Data Types:** QML/ML/DL heavily utilizes numerical data (e\n\n\n\ud83d\udcc4 **From**: [Add Streamlit Interface.txt]",
+    "source": "local",
+    "response_time": 12.53,
+    "citations": [
+      "Add Streamlit Interface.txt"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T04:02:41.809202",
+    "question": "Can you give me three points stating differences and similarities between Quantum Machine Learning  / Machine Learning  / Deep learning  and bio infomatics",
+    "answer": "Quantum Machine Learning uses quantum computing for enhanced data processing, Deep Learning focuses on neural networks for complex pattern recognition, and Bioinformatics applies computational methods to biological data; all aim to solve complex problems but differ in approach and technology.\n\n\ud83d\udd17 **According to**: https://academic.oup.com/bib/article/25/5/bbae391/7733456, https://www.mdpi.com/1422-0067/26/6/2428",
+    "source": "web",
+    "response_time": 24.46,
+    "citations": [
+      "https://academic.oup.com/bib/article/25/5/bbae391/7733456",
+      "https://www.mdpi.com/1422-0067/26/6/2428"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T04:03:43.610050",
+    "question": "\"Show me a comparison table between maths for Machine learning and maths for Deep Learning \"",
+    "answer": "Machine learning uses statistics, linear algebra, and probability. Deep learning focuses more on calculus, matrix operations, and optimization techniques. Both require understanding of geometry and dimensionality reduction.\n\n\ud83d\udd17 **According to**: https://www.deeplearning.ai/courses/mathematics-for-machine-learning-and-data-science-specialization/, https://www.geeksforgeeks.org/machine-learning/machine-learning-mathematics/",
+    "source": "web",
+    "response_time": 7.19,
+    "citations": [
+      "https://www.deeplearning.ai/courses/mathematics-for-machine-learning-and-data-science-specialization/",
+      "https://www.geeksforgeeks.org/machine-learning/machine-learning-mathematics/"
+    ]
   }
 ]

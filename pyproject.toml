@@ -1,0 +1,7 @@
+[tool.pylint]
+max-line-length = 120
+disable = [
+    "C0114",  # Missing module docstring
+    "C0116",  # Missing function docstring
+]
+extension-pkg-whitelist = ["sqlalchemy", "chromadb", "langchain"]
