@@ -56,7 +56,7 @@ def debug_database_config():
     # Test database connection
     print("\n🔌 Testing Database Connection...")
     try:
-        from sqlalchemy import create_engine, text
+        from sqlalchemy_init import create_engine, text
         
         engine = create_engine(final_url, pool_pre_ping=True)
         

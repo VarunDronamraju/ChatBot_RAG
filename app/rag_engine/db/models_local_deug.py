@@ -1,6 +1,6 @@
 # app/rag_engine/db/models_local_debug.py
 
-from sqlalchemy import Column, Text, DateTime, Integer
+from sqlalchemy_init import Column, Text, DateTime, Integer
 from sqlalchemy.ext.declarative import declarative_base
 from datetime import datetime
 

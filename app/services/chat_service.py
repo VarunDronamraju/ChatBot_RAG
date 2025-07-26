@@ -84,6 +84,60 @@ class ChatService:
         self.chroma_client = ChromaClient(persist_directory="app/data/chroma")
         self.s3_uploader = S3Uploader()
 
+    async def search_content(self, user_id: UUID, query: str, search_type: str = "local") -> Dict[str, Any]:
+        """Search content in documents based on query and search type"""
+        try:
+            if search_type == "local":
+                # Search in ChromaDB
+                query_embedding = self.embeddings_model.embed_query(query)
+                chunks = self.chroma_client.query_docs(query_embedding, n_results=10)
+                
+                results = []
+                for doc, dist, meta in zip(chunks["documents"][0], chunks["distances"][0], chunks["metadatas"][0]):
+                    similarity = 1 - (dist / 2)
+                    if similarity > 0.5:  # Only include relevant results
+                        results.append({
+                            "content": doc,
+                            "similarity": similarity,
+                            "metadata": meta,
+                            "source": meta.get("source", "Unknown")
+                        })
+                
+                return {
+                    "results": results,
+                    "total_found": len(results),
+                    "search_type": "local"
+                }
+                
+            elif search_type == "web":
+                # Use web search
+                web_result = search_web(query, include_meta=True)
+                return {
+                    "results": web_result.get("results", []),
+                    "total_found": len(web_result.get("results", [])),
+                    "search_type": "web",
+                    "answer": web_result.get("answer", "")
+                }
+                
+            elif search_type == "hybrid":
+                # Combine local and web search
+                local_results = await self.search_content(user_id, query, "local")
+                web_results = await self.search_content(user_id, query, "web")
+                
+                return {
+                    "results": local_results["results"] + web_results["results"],
+                    "total_found": local_results["total_found"] + web_results["total_found"],
+                    "search_type": "hybrid",
+                    "local_count": local_results["total_found"],
+                    "web_count": web_results["total_found"]
+                }
+                
+        except Exception as e:
+            logger.error(f"Search error: {e}")
+            raise Exception(f"Search failed: {str(e)}")
+            
+        return {"results": [], "total_found": 0, "search_type": search_type}
+
     def create_conversation(self, user_id: UUID, title: str, chat_type: str = "general", tags: List[str] = None) -> Conversation:
         conversation = Conversation(
             id=uuid4(),

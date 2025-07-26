@@ -1,4 +1,3 @@
-#models.py
 from sqlalchemy import (
     Column, String, Text, DateTime, Integer, Float, Boolean,
     ForeignKey, Index, ARRAY
@@ -87,6 +86,7 @@ class DocumentMetadata(Base):
     __tablename__ = "documents_metadata"
     id = Column(Text, primary_key=True)
     filename = Column(Text)
+    content_hash = Column(Text)  # ← Added this line
     upload_status = Column(Text)
     local_path = Column(Text)
     mime_type = Column(Text)

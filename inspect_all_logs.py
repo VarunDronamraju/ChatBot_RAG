@@ -1,7 +1,7 @@
 # inspect_all_logs.py
 
 from sqlalchemy.orm import Session
-from sqlalchemy import select, func, desc
+from sqlalchemy_init import select, func, desc
 from app.rag_engine.db.models import Message
 from app.rag_engine.db.session import SessionLocal
 

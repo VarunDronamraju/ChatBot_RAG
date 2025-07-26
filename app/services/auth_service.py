@@ -90,7 +90,7 @@ class AuthService:
             return user
         return None
 
-    def create_access_token(self, user_id: str, email: str, role: str = "user", remember_me: bool = False) -> Dict[str, Any]:
+    def create_access_token(self, user_id: str, email: str, remember_me: bool = False) -> Dict[str, Any]:
         """Create JWT access token"""
         if remember_me:
             expire = datetime.utcnow() + timedelta(days=self.refresh_token_expire_days)
@@ -101,7 +101,6 @@ class AuthService:
             "user_id": user_id,
             "email": email,
             "exp": expire,
-            "role": role, 
             "iat": datetime.utcnow(),
             "type": "access"
         }

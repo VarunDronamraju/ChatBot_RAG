@@ -6,7 +6,7 @@ Run this once to create all required tables
 
 import os
 from dotenv import load_dotenv
-from sqlalchemy import create_engine
+from sqlalchemy_init import create_engine
 from app.rag_engine.db.base import Base
 from app.rag_engine.db.models import (
     User, Conversation, Message, DocumentMetadata, 
