@@ -15,7 +15,19 @@ from ..rag_engine.db.models import User, AuditLog
 from ..services.auth_service import AuthService
 from ..utils.logger import get_logger
 
-router = APIRouter()
+from fastapi import APIRouter, Depends
+from app.dependencies.roles import require_role
+
+# Inside app/api/auth_router.py
+router = APIRouter(prefix="/api/v1/auth", tags=["Authentication"])
+
+
+
+@router.get("/admin/dashboard", dependencies=[Depends(lambda: require_role(["admin"]))])
+def get_admin_data():
+    return {"msg": "Only admin can access this."}
+
+
 security = HTTPBearer()
 logger = get_logger()
 limiter = Limiter(key_func=get_remote_address)

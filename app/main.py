@@ -20,6 +20,12 @@ from .rag_engine.db.session import get_db
 from .rag_engine.aws.s3_config import get_s3_client
 from .rag_engine.chroma.chroma_client import ChromaClient
 
+from fastapi.middleware import Middleware
+from app.middleware.jwt_middleware import JWTAuthMiddleware
+from app.api import admin_router   # make sure __init__.py exists in app/api
+# ...
+
+
 # Load environment variables
 load_dotenv()
 
@@ -55,14 +61,22 @@ async def lifespan(app: FastAPI):
     yield
     logger.info("Shutting down RAGBot FastAPI application")
 
+middleware = [
+    Middleware(JWTAuthMiddleware)
+]
+
 app = FastAPI(
     title="RAGBot API",
     description="API for RAGBot - AI-powered document chat system with local RAG and web search",
     version="1.0.0",
     docs_url="/docs",
     redoc_url="/redoc",
-    lifespan=lifespan
+    lifespan=lifespan,
+    middleware=middleware
 )
+app.include_router(auth_router)
+
+
 
 # CORS middleware
 app.add_middleware(
@@ -120,6 +134,7 @@ app.include_router(auth_router, prefix="/api/v1/auth", tags=["Authentication"])
 app.include_router(chat_router, prefix="/api/v1/chat", tags=["Chat"])
 app.include_router(user_router, prefix="/api/v1/user", tags=["User Management"])
 app.include_router(health_router, prefix="/api/v1/health", tags=["Health"])
+app.include_router(admin_router.router, prefix="/api/v1/admin", tags=["Admin"]) 
 
 # Root endpoint
 @app.get("/")
@@ -152,7 +167,6 @@ async def api_info():
             "health": "/api/v1/health"
         }
     }
-
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("app.api.main:app", host="0.0.0.0", port=8000, reload=True, log_level="info")
+    uvicorn.run("app.main:app", host="0.0.0.0", port=8000, reload=True, log_level="info")

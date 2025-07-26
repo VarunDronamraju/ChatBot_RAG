@@ -12,7 +12,6 @@ import secrets
 from datetime import datetime, timedelta
 from typing import Optional, Dict, Any
 from uuid import UUID, uuid4
-
 from ..rag_engine.db.models import User
 from ..utils.logger import get_logger
 
@@ -55,11 +54,17 @@ class AuthService:
             search_bias_mode="none",
             conversation_style={}
         )
-        self.local_db.execute(
+      
+        # Use raw SQLite connection
+        import sqlite3
+        conn = sqlite3.connect("app/local/auth_cache.db")
+        cursor = conn.cursor()
+        cursor.execute(
             "INSERT OR REPLACE INTO auth_cache (user_id, password_hash) VALUES (?, ?)",
             (str(user.id), hashed_password)
         )
-        self.local_db.commit()
+        conn.commit()
+        conn.close()
 
         self.db.add(user)
         self.db.commit()
@@ -71,11 +76,13 @@ class AuthService:
         if not user:
             return None
 
-        cursor = self.local_db.execute(
-            "SELECT password_hash FROM auth_cache WHERE user_id = ?",
-            (str(user.id),)
-        )
+        # Use raw SQLite connection
+        import sqlite3
+        conn = sqlite3.connect("app/local/auth_cache.db")
+        cursor = conn.execute("SELECT password_hash FROM auth_cache WHERE user_id = ?", (str(user.id),))
         result = cursor.fetchone()
+        conn.close()
+        
         if not result:
             return None
 
@@ -83,7 +90,7 @@ class AuthService:
             return user
         return None
 
-    def create_access_token(self, user_id: str, email: str, remember_me: bool = False) -> Dict[str, Any]:
+    def create_access_token(self, user_id: str, email: str, role: str = "user", remember_me: bool = False) -> Dict[str, Any]:
         """Create JWT access token"""
         if remember_me:
             expire = datetime.utcnow() + timedelta(days=self.refresh_token_expire_days)
@@ -94,17 +101,23 @@ class AuthService:
             "user_id": user_id,
             "email": email,
             "exp": expire,
+            "role": role, 
             "iat": datetime.utcnow(),
             "type": "access"
         }
 
         encoded_jwt = jwt.encode(to_encode, self.secret_key, algorithm=self.algorithm)
 
-        self.local_db.execute(
+        # Use raw SQLite connection
+        import sqlite3
+        conn = sqlite3.connect("app/local/auth_cache.db")
+        cursor = conn.cursor()
+        cursor.execute(
             "INSERT OR REPLACE INTO token_cache (token, user_id, expires_at, is_valid) VALUES (?, ?, ?, ?)",
             (encoded_jwt, user_id, expire.isoformat(), True)
         )
-        self.local_db.commit()
+        conn.commit()
+        conn.close()
 
         return {
             "access_token": encoded_jwt,
@@ -114,11 +127,16 @@ class AuthService:
     def verify_token(self, token: str) -> Optional[Dict[str, Any]]:
         """Verify JWT token"""
         try:
-            cursor = self.local_db.execute(
+            # Use raw SQLite connection
+            import sqlite3
+            conn = sqlite3.connect("app/local/auth_cache.db")
+            cursor = conn.execute(
                 "SELECT user_id, expires_at, is_valid FROM token_cache WHERE token = ?",
                 (token,)
             )
             result = cursor.fetchone()
+            conn.close()
+            
             if not result or not result[2]:
                 return None
 
@@ -140,11 +158,16 @@ class AuthService:
     def invalidate_token(self, token: str) -> bool:
         """Invalidate a token"""
         try:
-            self.local_db.execute(
+            # Use raw SQLite connection
+            import sqlite3
+            conn = sqlite3.connect("app/local/auth_cache.db")
+            cursor = conn.cursor()
+            cursor.execute(
                 "UPDATE token_cache SET is_valid = FALSE WHERE token = ?",
                 (token,)
             )
-            self.local_db.commit()
+            conn.commit()
+            conn.close()
             return True
         except Exception as e:
             logger.error(f"Token invalidation failed: {str(e)}")
@@ -153,20 +176,26 @@ class AuthService:
     def change_password(self, user_id: UUID, current_password: str, new_password: str) -> bool:
         """Change user password"""
         try:
-            cursor = self.local_db.execute(
+            # Use raw SQLite connection
+            import sqlite3
+            conn = sqlite3.connect("app/local/auth_cache.db")
+            cursor = conn.execute(
                 "SELECT password_hash FROM auth_cache WHERE user_id = ?",
                 (str(user_id),)
             )
             result = cursor.fetchone()
             if not result or not self.verify_password(current_password, result[0]):
+                conn.close()
                 return False
 
             new_hash = self.hash_password(new_password)
-            self.local_db.execute(
+            cursor = conn.cursor()
+            cursor.execute(
                 "UPDATE auth_cache SET password_hash = ? WHERE user_id = ?",
                 (new_hash, str(user_id))
             )
-            self.local_db.commit()
+            conn.commit()
+            conn.close()
             return True
         except Exception as e:
             logger.error(f"Password change failed: {str(e)}")

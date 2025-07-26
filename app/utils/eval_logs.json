@@ -1000,5 +1000,70 @@
       "https://www.deeplearning.ai/courses/mathematics-for-machine-learning-and-data-science-specialization/",
       "https://www.geeksforgeeks.org/machine-learning/machine-learning-mathematics/"
     ]
+  },
+  {
+    "timestamp": "2025-07-26T18:01:32.613254",
+    "question": "Who is Varun Dronamraju",
+    "answer": "Varun Dronamraju is a computer science graduate specializing in artificial intelligence and machine learning. He is currently working at QClairvoyance Quantum Labs. He interned at The University of Texas at Dallas.\n\n\ud83d\udd17 **According to**: https://in.linkedin.com/in/varundronamraju, https://www.weekday.works/people/varun-dronamraju-varundronamraju",
+    "source": "web",
+    "response_time": 3.48,
+    "citations": [
+      "https://in.linkedin.com/in/varundronamraju",
+      "https://www.weekday.works/people/varun-dronamraju-varundronamraju"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T18:01:46.866097",
+    "question": "who is Varun Dronamraju",
+    "answer": "Varun Dronamraju is a computer science graduate specializing in AI and ML, currently interning in STEM research at The University of Texas at Dallas. He is also involved with QClairvoyance Quantum Labs. He graduated from GITAM University in 2025.\n\n\ud83d\udd17 **According to**: https://in.linkedin.com/in/varundronamraju, https://www.weekday.works/people/varun-dronamraju-varundronamraju",
+    "source": "web",
+    "response_time": 2.42,
+    "citations": [
+      "https://in.linkedin.com/in/varundronamraju",
+      "https://www.weekday.works/people/varun-dronamraju-varundronamraju"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T18:02:01.687038",
+    "question": "what are the projects of varun Dronamraju",
+    "answer": "Varun Dronamraju is a STEM research intern at The University of Texas at Dallas. He works on modeling wind erosion and turbulent drag. He is also involved in a passion project on AI-driven drug discovery.\n\n\ud83d\udd17 **According to**: https://www.linkedin.com/in/varun-dronamraju-330814303, https://www.linkedin.com/posts/varundronamraju_guide-for-ai-driven-de-novo-drug-discovery-activity-7327610495375413250-4RhB",
+    "source": "web",
+    "response_time": 2.44,
+    "citations": [
+      "https://www.linkedin.com/in/varun-dronamraju-330814303",
+      "https://www.linkedin.com/posts/varundronamraju_guide-for-ai-driven-de-novo-drug-discovery-activity-7327610495375413250-4RhB"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T18:02:19.609711",
+    "question": "who is markalos",
+    "answer": "Markalos was once the pride of industrial innovation\u2014a powerhouse in both card production and heavy machinery. Founded in 1930 in Singapore by Indian automotive enthusiast Robert Burgers, the company quickly earned a reputation as the greatest card production house in the world. Its cards, known for their intricate design and unmatched quality, became collector favorites across Asia and Europe.\n\n\ud83d\udcc4 **From**: [Markalos The Forgotten Giant.txt]",
+    "source": "local",
+    "response_time": 8.6,
+    "citations": [
+      "Markalos The Forgotten Giant.txt"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T18:03:26.547230",
+    "question": "what are the contents in requiremnets.txt",
+    "answer": "A requirements.txt file lists project dependencies in a format pip can install. It includes package names and versions. Each line is a package to install.\n\n\ud83d\udd17 **According to**: https://www.freecodecamp.org/news/python-requirementstxt-explained/, https://learnpython.com/blog/python-requirements-file/",
+    "source": "web",
+    "response_time": 2.56,
+    "citations": [
+      "https://www.freecodecamp.org/news/python-requirementstxt-explained/",
+      "https://learnpython.com/blog/python-requirements-file/"
+    ]
+  },
+  {
+    "timestamp": "2025-07-26T18:03:42.006288",
+    "question": "context in you.txt",
+    "answer": "I'm an AI system built by a team of inventors at Amazon. I can provide concise answers based on my training. For context retrieval, I focus on essential facts directly related to the query.\n\n\ud83d\udd17 **According to**: https://www.reddit.com/r/TomorrowByTogether/comments/vzxb6s/what_are_your_favorite_out_of_context_txt_lines/, https://stackoverflow.com/questions/71541067/how-to-get-context-of-a-text-file-and-add-it-to-html-file-by-python-using-flask",
+    "source": "web",
+    "response_time": 2.26,
+    "citations": [
+      "https://www.reddit.com/r/TomorrowByTogether/comments/vzxb6s/what_are_your_favorite_out_of_context_txt_lines/",
+      "https://stackoverflow.com/questions/71541067/how-to-get-context-of-a-text-file-and-add-it-to-html-file-by-python-using-flask"
+    ]
   }
 ]
