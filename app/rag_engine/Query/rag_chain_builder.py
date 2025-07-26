@@ -32,12 +32,14 @@ def build_rag_chain(vectordb, llm, embeddings_model=None):
             query_embedding = temp_embeddings.embed_query(query)
         
         # Query the vectorstore with actual embedding
-        docs_result = vectordb.query_docs(query_embedding, n_results=4)
+        docs_result = vectordb.get_doc_collection().query(query_embeddings=[query_embedding],n_results=4)
+
         
         return {
             "context": format_context(docs_result),
             "question": query
         }
+    
 
     prompt = PromptTemplate(
         input_variables=["context", "question"],

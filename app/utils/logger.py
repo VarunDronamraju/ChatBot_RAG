@@ -3,6 +3,7 @@
 import json
 import os
 from datetime import datetime
+import logging
 
 LOG_FILE = "app/utils/eval_logs.json"
 
@@ -27,3 +28,14 @@ def log_eval(question, answer, source, response_time, citations):
             logs.append(log_entry)
             f.seek(0)
             json.dump(logs, f, indent=2)
+
+
+def get_logger(name: str = "ragbot") -> logging.Logger:
+    logger = logging.getLogger(name)
+    if not logger.handlers:
+        logger.setLevel(logging.INFO)
+        handler = logging.StreamHandler()
+        formatter = logging.Formatter("[%(asctime)s] [%(levelname)s] %(message)s")
+        handler.setFormatter(formatter)
+        logger.addHandler(handler)
+    return logger

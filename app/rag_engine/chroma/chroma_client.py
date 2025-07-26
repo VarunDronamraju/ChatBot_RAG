@@ -5,7 +5,6 @@ from typing import List, Dict, Optional
 from pathlib import Path
 from app.rag_engine.chroma.vector_schema import DocumentEmbedding, ConversationContext
 
-
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
@@ -20,6 +19,12 @@ class ChromaClient:
             name="conversation_context",
             metadata={"hnsw:space": "cosine"}
         )
+
+    def get_doc_collection(self):
+        return self.doc_collection
+
+    def get_conv_collection(self):
+        return self.conv_collection
 
     def _validate_document_embeddings(self, embeddings: List[DocumentEmbedding]):
         for emb in embeddings:
@@ -121,3 +126,4 @@ class ChromaClient:
             metadata={"hnsw:space": "cosine"}
         )
         logger.info("✅ ChromaDB collections reset successfully.")
+
